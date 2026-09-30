@@ -1,0 +1,45 @@
+:root {
+  --color-acento-lider: #0070f3;
+}
+
+/*Estilos de CSS Lider*/
+.registro-container {
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.registro-container h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.form-asistencia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-asistencia input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.btn-registrar {
+  background-color: var(--color-acento-lider);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-registrar:hover {
+  opacity: 0.9;
+}
