@@ -1,4 +1,4 @@
-/* --- RESET Y ESTILOS GENERALES --- */
+/* ESTILOS GENERALES */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-/* --- BARRA DE NAVEGACIÓN SUPERIOR --- */
+/* BARRA DE NAVEGACIÓN SUPERIOR */
 nav {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
@@ -37,14 +37,12 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* Opción activa "Talleres" */
 nav a:first-child {
     border: 1.5px solid #000000;
     padding: 2px 6px;
     border-radius: 4px;
 }
 
-/* --- TÍTULO Y SUBTÍTULO --- */
 h1 {
     font-size: 36px;
     font-weight: 800;
@@ -68,7 +66,7 @@ br {
     display: none;
 }
 
-/* --- TARJETAS (Nuevos efectos :hover incluidos) --- */
+
 #int-Python,
 #fund-Redes,
 #diseño-Datos {
@@ -79,22 +77,21 @@ br {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     width: 280px;
     float: left;
-    cursor: pointer; /* Cambia el cursor a manita */
+    cursor: pointer; 
     
-    /* Animación fluida al pasar el ratón */
+    
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* EFECTO HOVER DE LAS TARJETAS */
 #int-Python:hover,
 #fund-Redes:hover,
 #diseño-Datos:hover {
-    transform: translateY(-4px); /* Eleva la tarjeta ligeramente */
+    transform: translateY(-4px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-    border-color: #0066ff; /* Cambia el borde a azul */
+    border-color: #0066ff;
 }
 
-/* Alineación horizontal en pantalla ancha */
+
 #int-Python {
     margin-left: calc((100% - 900px) / 2);
     margin-right: 30px;
@@ -104,7 +101,6 @@ br {
     margin-right: 30px;
 }
 
-/* --- TEXTO DENTRO DE LAS TARJETAS --- */
 div[id] h2 {
     font-size: 22px;
     font-weight: 800;
@@ -120,7 +116,6 @@ div[id] p {
     line-height: 1.4;
 }
 
-/* --- RESPONSIVE EN MÓVILES --- */
 @media (max-width: 930px) {
     #int-Python,
     #fund-Redes,
