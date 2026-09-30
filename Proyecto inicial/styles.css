@@ -1,0 +1,123 @@
+:root {
+  --color-primario: #0066ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f5;
+  color: #111827;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 32px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  color: var(--color-primario);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111111;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 350px;
+  margin-bottom: 10px;
+}
+
+body > p {
+  text-align: left;
+  color: #555555;
+  font-size: 15px;
+  margin-left: 350px;
+  margin-bottom: 25px;
+}
+
+br {
+  display: none;
+}
+
+div[id^="int-"],
+div[id^="fund-"],
+div[id^="diseño-"] {
+  background-color: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 28px 24px;
+  width: 215px;
+  min-height: 220px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+div#int-Python {
+  margin-left: 350px;
+}
+
+div[id^="int-"]:hover,
+div[id^="fund-"]:hover,
+div[id^="diseño-"]:hover {
+  border-color: var(--color-primario);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+div[id^="int-"]:active,
+div[id^="fund-"]:active,
+div[id^="diseño-"]:active {
+  border-color: var(--color-primario);
+  background-color: #f0f7ff;
+  transform: translateY(0);
+}
+
+div h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111111;
+  line-height: 1.25;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+div p {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+div a {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  h1, body > p, div#int-Python {
+    margin-left: 40px;
+  }
+}
